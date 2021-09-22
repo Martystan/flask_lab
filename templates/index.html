@@ -7,7 +7,12 @@
         {% for order in orders %}
         <div>
             <p>{{order.customer_name}}: {{order.order_date}},{{order.quantity}}</p>
+            <a href = "/orders/{{orders.index(order)}}">Show title</a>
         </div>
+        
+        
+            
+        
         {% endfor %}
     </body>
     </html>
